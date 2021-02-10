@@ -1,0 +1,736 @@
+/* Herramientas import */
+
+@import url('https://fonts.googleapis.com/css2? family=Roboto:wght@500&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+a{
+    text-decoration: none;
+}
+
+
+/* ESTILOS GENERALES */
+
+body{
+
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    color: white;
+    
+}
+
+/* ESTILOS HEADER */
+
+#header{
+
+    width: 100%;
+    height: 60px;
+    background-color: rgb(101,101,101);
+}
+
+#Menu{
+
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    position: fixed;
+    top:0.3rem;
+    left: 0.8rem;
+    z-index: 20;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.OpenMenu{
+
+    background-image:url(../img/lista.png);
+}
+
+.CloseMenu{
+
+    margin-top: 10px;
+    background-image: url(../img/close.png);
+    background-size: cover;
+    transform: rotate(180deg);
+    transition-property: all;
+    transition-duration:2s;
+}
+
+.OpenMenuRotate{
+
+    background-image:url(../img/lista.png);
+    transform: rotate(180deg);
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+/* ESTILOS NAV */
+
+Nav{
+
+display: none;
+
+
+}
+
+.Nav{
+
+    font-family:'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    display:block;
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    padding-top: 60px;
+
+}
+
+.Nav li{
+
+
+    list-style: none;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.Nav li:hover{
+
+    font-size: 2.2rem;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.Nav li a{
+
+    color: white;
+    text-decoration: none;
+}
+
+.Nav li a:hover{
+
+    background-color: rgb(25,102,193);
+    
+}
+
+/* ESTILOS MAIN */
+
+#main{
+
+    width: 100%;
+    height: 3000px;
+    background-color: rgb(101,101,101);
+
+}
+
+/* SECTION PRESENTACION */
+
+.Presentacion{
+
+    width: 100%;
+    height: 340px;
+    background-color: rgb(101,101,101);
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom:1px solid grey;
+
+}
+
+.PresentacionBlue{
+
+    width: 30%;
+    height: 400px;
+    background-color: rgb(25,102,193);
+    border-left:1px solid grey;
+}
+
+.ImagenPersonal{
+
+    width: 130px;
+    height: 130px;
+    background-image: url(../img/personal.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    left:12rem;
+    bottom: 150px;
+}
+
+.PresentacionText{
+
+    width: 60%;
+    height: 200px;
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+}
+
+.Hola, .MiNombre, .MiApellido, .SoyFront{
+    
+
+    display:block;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.Hola p{
+
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.MiNombre p{
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(90,166,255);
+    margin: 0;
+    padding: 0;
+}
+
+.MiApellido p{
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(90,166,255);
+    margin: 0;
+    padding: 0;
+    
+}
+
+.SoyFront h1{
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Section PresentacionDos */
+
+.PresentacionDos{
+
+    width: 100%;
+    height: 300px;
+    background-color:rgb(83,83,83);
+    position: absolute;
+    top: 400px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+}
+
+.PreDosText{
+
+    display: block;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PreDosText p{
+
+    color: white;
+    font-family:'Roboto', sans-serif;
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.PreDosImg{
+
+    width: 160px;
+    height: 160px;
+    background-image:url(../img/responsive.png);
+    background-size:cover;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left:auto;
+    transition-property: background-image:url(../img/responsive.png);
+    transition-duration: 1s;
+}
+
+.PreDosImg:hover{
+
+    background-image: url(../img/help.png);
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+/* SECTION SOBRE MI */
+
+.SobreMi{
+
+    width: 100%;
+    height: 400px;
+    background-color: rgb(25,102,193);
+    position: absolute;
+    top: 700px;
+    border-top: 2px grey;
+    border-bottom: 1px grey;
+}
+
+.SobreMiTitle{
+
+    color: white;
+    font-size: 1.8rem;
+    font-family:'Roboto', sans-serif;
+    text-shadow: -5px 0px  grey;
+    margin: 0;
+    padding: 0;
+}
+
+.SobreMiTitle h2{
+
+    width: 190px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.SoMiText{
+
+    display: block;
+    width: 300px;
+    color: white;
+    font-family:'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.SoMiText p{
+
+    margin:0;
+    padding: 0;
+}
+
+.VerTrabajos{
+   
+    display: block;
+    width: 120px;
+    color: white;
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    font-size:1.2rem;
+    padding: 9px;
+    background-color:rgb(255,175,16);
+    text-align: center;
+    border-radius: 3%;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.VerTrabajos:hover{
+
+    width: 130px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.Cv{
+
+    display:block;
+    width: 130px;
+    color: white;
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    font-size:1.2rem;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5%;
+    border: 4px solid rgb(255,175,16);
+    margin-left: 30px;
+    margin-top: 15px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.Cv:hover{
+
+    width: 140px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+/* Section Services */
+
+.Services{
+
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    top: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.Services h2{
+
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-shadow: -4px 0px rgb(25,102,193);
+    text-align: center;
+    
+    
+}
+
+
+.BoxDesing{
+
+    width:290px;
+    height: 300px;
+    border-radius: 2%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;   
+    background-image: linear-gradient(to right, rgb(219, 219, 53),  rgb(218, 218, 5));
+    color: white;
+    transition-property: all;
+    transition-duration: 1s;
+    background-image: url(../img/pexels-oleg-magni-2764678.jpg);
+    background-size: cover;
+}
+
+.BoxDesing:hover{
+
+    border-radius: 20%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.BoxDesing h3{
+
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.BoxDesing p{
+    
+    margin: 0;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.2rem;
+    text-align: center;
+}
+
+.BoxDeveloper{
+
+    width:290px;
+    height: 300px;
+    border-radius: 2%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgb(112, 255, 68),  rgb(83, 201, 47));
+    color:white;
+    transition-property: all;
+    transition-duration: 1s;
+    background-image: url(../img/pexels-olia-danilevich-4974914.jpg);
+    background-size: cover;
+
+}
+
+.BoxDeveloper:hover{
+
+    border-radius: 20%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.BoxDeveloper h3{
+
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.BoxDeveloper p{
+
+    margin: 0;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.2rem;
+    text-align: center;
+}
+
+.BoxCheck{
+
+    width:290px;
+    height: 300px;
+    background-image: linear-gradient(to right, rgb(213, 85, 252),  rgb(201, 25, 255));
+    border-radius: 2%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    transition-property: all;
+    transition-duration: 1s;
+    background-image: url(../img/pexels-cytonn-photography-955395.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.BoxCheck:hover{
+
+    border-radius: 20%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.BoxCheck h3{
+
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.BoxCheck p{
+    
+    margin: 0;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.2rem;
+    text-align: center;
+}
+
+/* Section UltTrabajos */
+
+.UltTrabajos{
+
+    width: 100%;
+    height: 1700px;
+    position: absolute;
+    top: 2300px;
+    font-family:'Roboto', sans-serif;
+    background-color: rgb(59, 59, 59);
+    border-bottom: 2px solid grey;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-evenly; */
+
+}
+
+.UltTrabajos h2{
+
+    font-size: 2rem;
+    height: 32px;
+    /* margin: 0;
+    margin-top: 10px;
+    margin-left: 10px; */
+    color: white;
+    text-align: center;
+    
+}
+
+.Subworks div{
+
+    width: 80px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+    position: absolute;
+}
+
+.ContainWorks{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Works{
+
+    margin: 0;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(190, 190, 190);
+}
+
+.WorkOne , .WorkTwo, .WorkThree, .WorkFour{
+
+    margin-top: 20px;
+    width: 300px;
+    height: 330px;
+    background-color: rgb(206, 203, 203);
+    cursor: pointer;
+    border-radius: 2%;
+}
+
+.ContacMe{
+
+    font-size: 1rem;
+    color: rgb(197, 197, 197);
+    font-family:'Roboto', sans-serif;
+}
+
+.AContacMe{
+
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    background-color:rgb(16, 100, 255);
+    transition-property: padding;
+    transition-duration: 1s;
+}
+
+.AContacMe:hover{
+
+    padding: 15px;
+    transition-property: padding;
+    transition-duration: 1s;
+}
+
+/* Estilos Contacto */
+
+.Contacto{
+
+    width: 100%;
+    height: 900px;
+    background-color:rgb(59, 59, 59);
+    position: absolute;
+    top: 4000px;
+    border-top: 1px solid grey;
+}
+
+.Contacto h2{
+
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    font-family:'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+.Form{
+
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.Contacto label{
+
+    font-size: 1rem;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(179, 179, 179);
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.Contacto input{
+
+    background-color: rgb(73, 73, 73);
+    border-radius: 5%;
+    border: none;
+    color: grey;
+    width: 330px;
+    height: 40px;
+    text-align:left;
+    font-size: 1.5rem;
+}
+
+#InputEmail{
+
+    font-size: 1.5rem;
+}
+
+#InputConsulta{
+
+    height: 200px;
+    text-align:;
+}
+
+#ButtonSubmit{
+
+    width: 150px;
+    height: 60px;
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+    background-color: orange;
+
+}
+
+.LogoText{
+
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/Logo.png);
+    background-size: cover;
+}
+
+/* Estilos Footer */
+
+#footer{
+
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+}
